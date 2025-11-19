@@ -5,7 +5,7 @@ if (ageInput === null) {
     // La personne n'a pas souhaité répondre
     console.log("Entrée annulée par l'utilisateur.");
 } else {
-    let age = parseInt(ageInput, 10);   // <-- const remplacé par let
+    let age = parseInt(ageInput, 10);   
     
     if (Number.isNaN(age)) {
         console.log('Entrée non valide — veuillez entrer un nombre.');
@@ -15,3 +15,4 @@ if (ageInput === null) {
         console.log("Vous n'êtes pas encore un adulte (mais c'est pour bientôt)");
     }
 }
+
