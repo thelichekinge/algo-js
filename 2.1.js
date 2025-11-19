@@ -1,11 +1,12 @@
-// Demade l'age a la personne et affiche la réponse selon le résultat
-const ageInput = prompt('Veuillez entrer votre âge :');
+// Demande l'âge à la personne et affiche la réponse selon le résultat
+let ageInput = prompt('Veuillez entrer votre âge :');
 
 if (ageInput === null) {
     // La personne n'a pas souhaité répondre
     console.log("Entrée annulée par l'utilisateur.");
 } else {
-    const age = parseInt(ageInput, 10);
+    let age = parseInt(ageInput, 10);   // <-- const remplacé par let
+    
     if (Number.isNaN(age)) {
         console.log('Entrée non valide — veuillez entrer un nombre.');
     } else if (age >= 18) {
