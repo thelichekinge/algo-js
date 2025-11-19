@@ -1,3 +1,4 @@
-const greeting = 'Bonjour Becode!';
-console.log('Micael dit:', greeting);
+let bonjour = 'Bonjour Becode!';
+console.log('Micael dit:', bonjour);
+
 
